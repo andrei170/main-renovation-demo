@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Main Renovation · Concept Site</title>
+<title>Main Renovation - Concept Site</title>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -26,7 +26,7 @@ img{max-width:100%;display:block}
 
 /* ---------- nav ---------- */
 nav{position:sticky;top:0;z-index:60;background:rgba(247,249,251,.88);backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--line)}
-.navin{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.navin{max-width:1140px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{font-family:Bitter,serif;font-weight:700;font-size:19px;letter-spacing:-.02em;white-space:nowrap}
 .logo span{color:var(--acc)}
 .navl{display:flex;gap:22px;font-size:14.5px;font-weight:500}
@@ -46,10 +46,10 @@ nav{position:sticky;top:0;z-index:60;background:rgba(247,249,251,.88);backdrop-f
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.09;
   background:repeating-linear-gradient(78deg,transparent 0 40px,rgba(255,255,255,.5) 40px 41px),
              repeating-linear-gradient(-12deg,transparent 0 40px,rgba(255,255,255,.28) 40px 41px)}
-.heroin{position:relative;z-index:2;max-width:920px;padding:64px 0 70px}
-@media(max-width:820px){.heroin{padding:44px 0 50px}}
+.heroin{position:relative;z-index:2;max-width:1140px;margin:0 auto;padding:64px 22px 70px}
+@media(max-width:820px){.heroin{padding:44px 18px 50px}}
 .eyeb{display:inline-block;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--acc2);border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.05);padding:6px 13px;border-radius:999px;margin-bottom:18px}
-.hero h1{font-size:clamp(30px,4.9vw,50px);margin-bottom:16px;max-width:19ch;text-wrap:balance}
+.hero h1{font-size:clamp(30px,4.9vw,50px);margin-bottom:16px;max-width:24ch;text-wrap:balance}
 @media(max-width:820px){.hero h1{max-width:none}}
 .hero h1 em{font-style:normal;color:var(--acc2)}
 .hero .lede,.hero .sh{font-size:clamp(16px,1.9vw,18.5px);color:#cbdaea;max-width:62ch;text-align:left;margin:0}
@@ -64,7 +64,7 @@ nav{position:sticky;top:0;z-index:60;background:rgba(247,249,251,.88);backdrop-f
 
 /* ---------- trust bar ---------- */
 .trust{background:#0b1218;color:#b6c2cd;padding:18px 0;border-top:1px solid rgba(255,255,255,.06)}
-.trustin{display:grid;grid-template-columns:repeat(4,1fr);gap:14px 30px;font-size:13.5px}
+.trustin{max-width:1140px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px 30px;font-size:13.5px}
 @media(max-width:820px){.trustin{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:440px){.trustin{grid-template-columns:1fr}}
 .fact{display:flex;flex-direction:column;gap:3px;padding-left:13px;border-left:2px solid rgba(140,192,239,.45)}
@@ -123,7 +123,7 @@ section p+.sh{margin-top:14px}
 .band .areas span{background:var(--bg)}
 
 /* ---------- form ---------- */
-.form{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow-lg);color:var(--ink);max-width:620px}
+.form{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow-lg);color:var(--ink);max-width:620px;margin:0 auto}
 .band .form{background:var(--bg)}
 .form h3{font-size:20px;margin-bottom:4px}
 .form .fs{font-size:13.5px;color:var(--mut);margin-bottom:14px}
@@ -159,6 +159,15 @@ select:focus,input:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3
 /* ---------- footer ---------- */
 footer{background:#0b1218;color:#8e9daf;font-size:12.6px;line-height:1.72;padding:34px 0 46px;border-top:1px solid rgba(255,255,255,.07)}
 footer b{color:#c3d1de;font-weight:600}
+
+/* ---------- quote block promoted to the top of the page ---------- */
+.quote{background:linear-gradient(180deg,#eef3f8,var(--bg));border-bottom:1px solid var(--line);padding:46px 0 52px}
+.quote .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.quote h2{margin-bottom:8px}
+.quote .sh{margin:0 auto 24px;text-align:center}
+.quote .form{width:100%;text-align:left}
+.quote .form label{text-align:left}
+@media(max-width:700px){.quote{padding:34px 0 38px}}
 </style>
 <div class="demobar">Concept only &middot; built by AG1 Consulting for discussion &middot; not a live site &middot; every figure below is illustrative</div>
 
@@ -190,6 +199,20 @@ footer b{color:#c3d1de;font-weight:600}
   <div class="fact"><b>3</b><span>Conklin commercial systems</span></div>
   <div class="fact"><b>A+</b><span>BBB rating</span></div>
 </div></div>
+
+<section id="form" class="quote"><div class="wrap">
+  <h2>Get a free roof inspection</h2>
+  <div class="form">
+    <label>Name<input type="text" placeholder="Your name"></label>
+    <label>Phone<input type="tel" placeholder="(404) ..."></label>
+    <label>Town<select><option>Loganville</option><option>Snellville</option><option>Grayson</option><option>Monroe</option><option>Dacula</option><option>Lawrenceville</option><option>Conyers</option><option>Somewhere else</option></select></label>
+    <label>What is happening?<select><option>I have a leak</option><option>Storm or hail damage</option><option>My roof is old and I want it assessed</option><option>Commercial building</option><option>Something else</option></select></label>
+    <label>Residential or commercial?<select><option>Residential</option><option>Commercial</option></select></label>
+    <button class="btn" type="button">Request inspection</button>
+    <div class="fnote">Concept form &mdash; not connected. Illustrative only.</div>
+  </div>
+</div></section>
+
 
 <section id="res"><div class="wrap">
   <h2>Residential Roofing in Loganville</h2>
@@ -269,19 +292,6 @@ footer b{color:#c3d1de;font-weight:600}
     <div class="step"><b>2. Free inspection</b><span>We go up, photograph everything, and show you what we found</span></div>
     <div class="step"><b>3. Written quote</b><span>Scope, materials and price in writing &mdash; repair and replacement where both apply</span></div>
     <div class="step"><b>4. The work</b><span>Our crew, GAF certified, with the site left clean</span></div>
-  </div>
-</div></section>
-
-<section id="form"><div class="wrap">
-  <h2>Get a free roof inspection</h2>
-  <div class="form">
-    <label>Name<input type="text" placeholder="Your name"></label>
-    <label>Phone<input type="tel" placeholder="(404) ..."></label>
-    <label>Town<select><option>Loganville</option><option>Snellville</option><option>Grayson</option><option>Monroe</option><option>Dacula</option><option>Lawrenceville</option><option>Conyers</option><option>Somewhere else</option></select></label>
-    <label>What is happening?<select><option>I have a leak</option><option>Storm or hail damage</option><option>My roof is old and I want it assessed</option><option>Commercial building</option><option>Something else</option></select></label>
-    <label>Residential or commercial?<select><option>Residential</option><option>Commercial</option></select></label>
-    <button class="btn" type="button">Request inspection</button>
-    <div class="fnote">Concept form &mdash; not connected. Illustrative only.</div>
   </div>
 </div></section>
 
